@@ -1,0 +1,172 @@
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    line-height: 1.8;
+    margin: 0;
+    padding: 0;
+    background-color: #fafafa;
+    color: #333;
+}
+
+.container {
+    width: 85%;
+    margin: auto;
+    overflow: hidden;
+}
+
+header {
+    /* width: 85%;
+    margin: auto; */
+    background: linear-gradient(135deg, #6a98b6, #54bcb4);
+    color: #080808;
+    padding: 20px;
+}
+
+header h1 {
+    text-align: left;
+    font-size: 28px;
+    margin: 0;
+}
+
+header h2 {
+    text-align: left;
+    font-size: 15px;
+    margin: 10px 0 0 0;
+}
+
+.subtitle-link {
+    color: #080808;
+    text-decoration: none;
+}
+
+.subtitle-link:hover {
+    text-decoration: underline;
+}
+
+.main-header {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px;
+}
+
+.introduction,
+.publications,
+.album {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.heading {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #010005;
+    border-bottom: 2px solid #5BC0EB;
+    padding-bottom: 5px;
+}
+
+.profile-img {
+    width: 200px;
+    border-radius: 50%;
+    float: right;
+    margin-left: 20px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+a {
+    color: #010005;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+a.email-link {
+    color: #010005;
+    text-decoration: none;
+}
+
+a.email-link:hover {
+    text-decoration: underline;
+}
+
+.publication-category {
+    display: inline-block;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+.llm { background-color: #FF6B6B; } /* Large Language Model */
+.agent { background-color: #4ECDC4; } /* Agent */
+.reasoning { background-color: #FFD166; } /* Reasoning */
+.nlp { background-color: #1A535C; } /* Natural Language Processing */
+.speech { background-color: #5BC0EB; } /* Speech Processing */
+.writing { background-color: #FF9F1C; } /* Writing Assistance */
+.ml { background-color: #f72f02; } /* Machine Learning */
+
+/* Tooltip styles */
+.publication-category {
+    position: relative;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.publication-category[title]::after {
+    content: attr(title);
+    position: absolute;
+    bottom: 125%; /* Position above the element */
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: #fff;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    font-size: 12px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.2s ease-in-out;
+}
+
+.publication-category[title]:hover::after {
+    opacity: 1;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-item {
+    width: calc(33.333% - 10px);
+    text-align: center;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+.gallery p {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #666;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: linear-gradient(135deg, #6a98b6, #54bcb4);
+    color: #fff;
+}
