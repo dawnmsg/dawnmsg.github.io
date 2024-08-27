@@ -16,7 +16,7 @@ body {
 header {
     /* width: 85%;
     margin: auto; */
-    background: linear-gradient(135deg, #6a98b6, #54bcb4);
+    background: linear-gradient(135deg, #fbfbfb, #f7fafa);
     color: #080808;
     padding: 20px;
 }
@@ -167,6 +167,6 @@ a.email-link:hover {
 footer {
     text-align: center;
     padding: 20px;
-    background: linear-gradient(135deg, #6a98b6, #54bcb4);
-    color: #fff;
+    background: linear-gradient(135deg, #fbfbfb, #f7fafa);
+    color: #000000;
 }
