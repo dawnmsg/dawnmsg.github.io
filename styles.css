@@ -170,3 +170,12 @@ footer {
     background: linear-gradient(135deg, #fbfbfb, #f7fafa);
     color: #000000;
 }
+
+.new-icon {
+    background-color: red;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 5px;
+    font-size: 12px;
+    font-weight: bold;
+}
